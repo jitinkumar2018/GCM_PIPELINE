@@ -41,7 +41,7 @@ pipeline
            {
             steps
              {
-		//git url: 'https://gitlab.com/[username]/[my-repo].git', branch: 'master', credentialsId: 'my-gitlab-repo-creds'
+                 scm checkout
                }
              }
            

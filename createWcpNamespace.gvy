@@ -83,7 +83,7 @@ pipeline
 
                     
 
-                    sh "sshpass -p ${env.VCSA_PASSWORD} scp -o StrictHostKeyChecking=no Create_WCP_Namespaces.sh root@${env.VCSA_IP}:/root"
+                    sh "sshpass -p ${env.VCSA_PASSWORD} scp -o StrictHostKeyChecking=no GCM_PIPELINE/Create_WCP_Namespaces.sh root@${env.VCSA_IP}:/root"
                     
 
                     //cmd = "sshpass -p ${env.VCSA_PASSWORD} ssh -o StrictHostKeyChecking=no root@$VC_IP ./Create_WCP_Namespaces.sh 1 2 $STORAGE_PROFILE $WCP_NAMESPACE_PREFIX $CLUSTER_NAME"

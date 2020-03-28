@@ -41,10 +41,10 @@ pipeline
            {
             steps
              {
-		git url: 'https://gitlab.com/[username]/[my-repo].git', branch: 'master', credentialsId: 'my-gitlab-repo-creds'
+		//git url: 'https://gitlab.com/[username]/[my-repo].git', branch: 'master', credentialsId: 'my-gitlab-repo-creds'
                }
              }
-           }
+           
         stage('Create WCP Namespaces')
           {
             environment

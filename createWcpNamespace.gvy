@@ -41,10 +41,12 @@ pipeline
            {
             steps
              {
-                 scm checkout
+               script
+                {
+                 sh 'git clone git@github.com:jitinkumar2018/GCM_PIPELINE.git'
                }
              }
-           
+           }
         stage('Create WCP Namespaces')
           {
             environment
